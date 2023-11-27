@@ -1,0 +1,13 @@
+name: "Extract current branch"
+description: "Extract current branch and set env variable CURRENT_BRANCH from GITHUB_REF"
+inputs:
+  variable-name:
+    description: "Use this variable name instead of CURRENT_BRANCH"
+    required: false
+    default: "CURRENT_BRANCH"
+runs:
+  using: "composite"
+  steps:
+    - name: Extract current branch name
+      run: echo "${{ inputs.variable-name }}=$($(${{ github.ref }} -split "(/)"))[-1]" >> $Env:GITHUB_ENV
+      shell: pwsh
