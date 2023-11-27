@@ -1,5 +1,10 @@
 name: "Extract current branch"
 description: "Extract current branch and set env variable CURRENT_BRANCH from GITHUB_REF"
+author: "LazyPanda07"
+branding:
+  icon: "anchor"
+  color: "green"
+  
 inputs:
   variable-name:
     description: "Use this variable name instead of CURRENT_BRANCH"
