@@ -1,6 +1,7 @@
 # Extract-Current-Branch
 
-Extract current branch and set to CURRENT_BRANCH env variable
+Extract current branch and set to CURRENT_BRANCH env variable  
+Uses PowerShell for extracting variable
 
 # Usage
 See [action.yml](https://github.com/LazyPanda07/extract-current-branch/blob/master/action.yml)
