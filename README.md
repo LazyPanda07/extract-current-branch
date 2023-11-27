@@ -21,12 +21,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - uses: LazyPanda07/extract-current-branch@v1
+    - uses: LazyPanda07/extract-current-branch@v1.0.0
 
     - name: Print branch
       run: echo ${{ env.CURRENT_BRANCH }} # print dev or distribute
 
-    - uses: LazyPanda07/extract-current-branch@v1
+    - uses: LazyPanda07/extract-current-branch@v1.0.0
       with:
         variable-name: custom-branch # override default variable name to custom-branch
 
