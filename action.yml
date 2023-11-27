@@ -9,5 +9,5 @@ runs:
   using: "composite"
   steps:
     - name: Extract current branch name
-      run: echo "${{ inputs.variable-name }}=$($(${{ github.ref }} -split "(/)"))[-1]" >> $Env:GITHUB_ENV
+      run: echo "${{ inputs.variable-name }}=$($('${{ github.ref }}' -split "(/)"))[-1]" >> $Env:GITHUB_ENV
       shell: pwsh
